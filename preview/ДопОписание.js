@@ -107,5 +107,41 @@
 //.....................................................................
 
 
-                    //
+                    //034 События на мобильных устройствах
 
+//touchstart - срабатывает при возникновении касания к этому элементу
+//touchmove - движение пальца по элементу
+//touchend - вып-ся, когда палец оторвался от элемента
+//touchenter - ведя пальцем по экрану, попадаем на элемент на кот. повешено это событие
+//touchleave - ведя пальцем по экрану, уходим за пределы элемента на кот. повешено это событие
+//touchcancel - палец вышел за пределы, н-р, браузера
+
+// window.addEventListener('DOMContentLoaded', () => {
+//     const overlay = document.querySelector('.overlay');
+
+//     overlay.addEventListener('touchstart', (e) => {
+//         e.preventDefault();//Советуется всегда ставить отмену стандартного поведения браузера
+//         console.log('Start');
+//         console.log(e.touches);//TouchList {0: Touch, length: 1}
+//         console.log(e.targetTouches);
+//     });
+
+//     overlay.addEventListener('touchmove', (e) => {
+//         e.preventDefault();
+//         console.log('Move');
+//         console.log(e.changedTouches[0].pageX);//С помощью этого можно задать границы, выходя за которые буде что-то переключаться, н-р, слайд!
+//     });
+
+//     overlay.addEventListener('touchend', (e) => {
+//         e.preventDefault();
+//         console.log('End');
+//     });
+// });
+
+
+//touches - список всех пальцев, кот. взаимодействуют с экраном
+//targetTouches - показывает кол-во пальцев, кот. взаимодействуют с этим элементом
+//changedTouches - кол-во пальцев, кот. учавствуют в текущем событии. Которые совершили уже это действие
+//.......................................................................
+
+                        //
